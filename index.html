@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabungan Aesthetic</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>💰 Tabunganku 🌸</h2>
+
+    <input type="date" id="tanggal">
+    <input type="text" id="keterangan" placeholder="📝 Keterangan">
+    <input type="number" id="jumlah" placeholder="💵 Jumlah (Rp)">
+
+    <button onclick="tambahData()">➕ Tambah</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>📅</th>
+                <th>📝</th>
+                <th>💰</th>
+                <th>❌</th>
+            </tr>
+        </thead>
+        <tbody id="dataTabungan"></tbody>
+    </table>
+
+    <h3>Total: Rp <span id="total">0</span></h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
