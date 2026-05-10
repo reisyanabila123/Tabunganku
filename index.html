@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 📱 Responsive + Disable Zoom -->
+    <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+
+    <title>Tabungan Kucing 🐱</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🐱 Animasi -->
+<div class="cats">
+    <span>🐱</span>
+    <span>🐾</span>
+    <span>🐱</span>
+    <span>🐾</span>
+    <span>🐱</span>
+</div>
+
+<!-- 📦 Container -->
+<div class="container">
+
+    <h2>🐱 Tabunganku 💖</h2>
+
+    <!-- Input -->
+    <input 
+        type="date" 
+        id="tanggal"
+    >
+
+    <input 
+        type="text" 
+        id="keterangan"
+        placeholder="📝 Keterangan"
+    >
+
+    <input 
+        type="number" 
+        id="jumlah"
+        placeholder="💵 Jumlah (Rp)"
+    >
+
+    <!-- Tombol -->
+    <button onclick="tambahData()">
+        ➕ Tambah
+    </button>
+
+    <!-- Tabel -->
+    <table>
+        <thead>
+            <tr>
+                <th>📅</th>
+                <th>📝</th>
+                <th>💰</th>
+                <th>❌</th>
+            </tr>
+        </thead>
+
+        <tbody id="dataTabungan"></tbody>
+    </table>
+
+    <!-- Total -->
+    <h3>
+        Total: Rp 
+        <span id="total">0</span>
+    </h3>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
